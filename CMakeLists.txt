@@ -15,4 +15,4 @@ endif()
 include(${CMAKE_CURRENT_BINARY_DIR}/yacpm.cmake)
 
 add_library(${PROJECT_NAME} yacpm_test_lib.cpp)
-target_include_directories(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
