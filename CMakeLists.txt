@@ -8,8 +8,8 @@ if(NOT YACPM_TEST_LIB_SET_ME STREQUAL "lets go")
     message(FATAL_ERROR "YACPM_TEST_LIB_SET_ME needs to be value 'lets go'")
 endif()
 
-if(NOT EXISTS "${CMAKE_CURRENT_BINARY_DIR}/yacpm.cmake")
-    file(DOWNLOAD "https://github.com/Calbabreaker/yacpm/raw/v1/yacpm.cmake" "${CMAKE_CURRENT_BINARY_DIR}/yacpm.cmake")
+if(NOT EXISTS "${CMAKE_BINARY_DIR}/yacpm.cmake")
+    file(DOWNLOAD "https://github.com/Calbabreaker/yacpm/raw/v1/yacpm.cmake" "${CMAKE_BINARY_DIR}/yacpm.cmake")
 endif()
 
 include(${CMAKE_CURRENT_BINARY_DIR}/yacpm.cmake)
