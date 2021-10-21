@@ -1,0 +1,6 @@
+{
+    "packages": {
+        "glm": ""
+    },
+    "remote": "../../packages"
+}
