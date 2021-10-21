@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.12 FATAL_ERROR)
-project(yacpm_test_lib)
+project(yacpm_library_test)
 
 # set YACPM_TEST_LIB_SET_ME to "lets go" to sucessfully build
 option(YACPM_TEST_LIB_SET_ME "no set")
