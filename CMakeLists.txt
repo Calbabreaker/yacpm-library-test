@@ -8,11 +8,11 @@ if(NOT YACPM_LIBRARY_TEST STREQUAL "lets go")
     message(FATAL_ERROR "YACPM_LIBRARY_TEST needs to be value 'lets go'")
 endif()
 
-if(NOT EXISTS "${CMAKE_CURRENT_BINARY_DIR}/yacpm.cmake")
-    file(DOWNLOAD "https://github.com/Calbabreaker/yacpm/raw/v2/yacpm.cmake" "${CMAKE_CURRENT_BINARY_DIR}/yacpm.cmake")
+if(NOT EXISTS "${CMAKE_BINARY_DIR}/yacpm.cmake")
+    file(DOWNLOAD "https://github.com/Calbabreaker/yacpm/raw/v2/yacpm.cmake" "${CMAKE_BINARY_DIR}/yacpm.cmake")
 endif()
 
-include(${CMAKE_CURRENT_BINARY_DIR}/yacpm.cmake)
+include(${CMAKE_BINARY_DIR}/yacpm.cmake)
 
 add_library(${PROJECT_NAME} yacpm_library_test.cpp yacpm_library_test.h)
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
