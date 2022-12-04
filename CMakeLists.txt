@@ -9,7 +9,7 @@ if(NOT YACPM_LIBRARY_TEST STREQUAL "lets go")
 endif()
 
 if(NOT EXISTS "${CMAKE_BINARY_DIR}/yacpm.cmake")
-    file(DOWNLOAD "https://github.com/Calbabreaker/yacpm/raw/v2/yacpm.cmake" "${CMAKE_BINARY_DIR}/yacpm.cmake")
+    file(DOWNLOAD "https://github.com/Calbabreaker/yacpm/raw/v3/yacpm.cmake" "${CMAKE_BINARY_DIR}/yacpm.cmake")
 endif()
 
 include(${CMAKE_BINARY_DIR}/yacpm.cmake)
